@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Nikhil Agrahari</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -11,6 +11,12 @@
       integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+    />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
   </head>
   <body>
@@ -56,13 +62,43 @@
               <button>Hire Me</button>
               <button class="border-btn">My Works</button>
             </div>
+            <!-- Social Icon  --> 
+           
+          <div class="social-icons">
+            <!-- GitHub -->
+            <a
+              href="https://github.com/the-nikhilcodes"
+              target="_blank"
+              class="icon github"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+
+            <!-- LinkedIn -->
+            <a
+              href="https://www.linkedin.com/in/nikhil-agrahari"
+              target="_blank"
+              class="icon linkedin"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a
+              href="https://www.instagram.com/codewith.nikhil"
+              target="_blank"
+              class="icon instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
           </div>
           <div class="image-container">
             <img src="Images/My-Pro_Img,,,,.png" alt="Profile Image" />
           </div>
-        </section>
 
-        <section class="about-section">
+        </section>
+         <section class="about-section">
           <h2>About Me</h2>
           <div class="about-container">
             <div class="about-img">
@@ -106,73 +142,223 @@
             </div>
           </div>
         </section>
-        <section id="skills" class="skills-section">
+        <!-- Skills Section -->
+        <section class="skills-section">
           <h2>Skills & Technologies</h2>
-          <!-- <p>
-            I enjoy learning and practicing new technologies. Here are some I
-            know:
-          </p> -->
-
-          <div class="skills-grid">
-            <!-- HTML -->
-            <div class="skill-card">
-              <img src="images/html.png" alt="HTML Logo" width="50" />
-              <p>HTML</p>
+          <div class="skills-container">
+            <!-- Web Development -->
+            <div class="skill-category">
+              <h3>🌐 Web Development</h3>
+              <div class="skill-cards">
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                  target="_blank"
+                  class="skill-card"
+                >
+                  <i class="fa-brands fa-html5"></i>
+                  <p>HTML</p>
+                </a>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                  target="_blank"
+                  class="skill-card"
+                >
+                  <i class="fa-brands fa-css3-alt"></i>
+                  <p>CSS</p>
+                </a>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                  target="_blank"
+                  class="skill-card"
+                >
+                  <i class="fa-brands fa-js"></i>
+                  <p>JavaScript</p>
+                </a>
+                <a
+                  href="https://en.wikipedia.org/wiki/C_(programming_language)"
+                  target="_blank"
+                  class="skill-card"
+                >
+                  <i class="fa-solid fa-c"></i>
+                  <p>C</p>
+                </a>
+                <a
+                  href="https://www.python.org/"
+                  target="_blank"
+                  class="skill-card"
+                >
+                  <i class="fa-brands fa-python"></i>
+                  <p>Python</p>
+                </a>
+                <a
+                  href="https://www.java.com/"
+                  target="_blank"
+                  class="skill-card"
+                >
+                  <i class="fa-brands fa-java"></i>
+                  <p>Java</p>
+                </a>
+              </div>
             </div>
 
-            <!-- CSS -->
-            <div class="skill-card">
-              <img src="images/css.png" alt="CSS Logo" width="50" />
-              <p>CSS</p>
-            </div>
-
-            <!-- JavaScript -->
-            <div class="skill-card">
-              <img src="images/js logo.png" alt="JavaScript Logo" width="50" />
-              <p>JavaScript</p>
-            </div>
-
-            <!-- C Programming -->
-            <div class="skill-card">
-              <img src="images/c.png" alt="C Logo" width="50" />
-              <p>C</p>
+            <!-- Cyber Security Tools -->
+            <div class="skill-category">
+              <h3>🔐 Cyber Security Tools</h3>
+              <div class="skill-cards">
+                <a href="https://nmap.org/" target="_blank" class="skill-card">
+                  <i class="fa-solid fa-network-wired"></i>
+                  <p>Nmap</p>
+                </a>
+                <a
+                  href="https://www.wireshark.org/"
+                  target="_blank"
+                  class="skill-card"
+                >
+                  <i class="fa-solid fa-wifi"></i>
+                  <p>Wireshark</p>
+                </a>
+                <a
+                  href="https://portswigger.net/burp"
+                  target="_blank"
+                  class="skill-card"
+                >
+                  <i class="fa-solid fa-bug"></i>
+                  <p>Burp Suite</p>
+                </a>
+                <a
+                  href="https://steghide.sourceforge.net/"
+                  target="_blank"
+                  class="skill-card"
+                >
+                  <i class="fa-solid fa-image"></i>
+                  <p>Steghide</p>
+                </a>
+                <a
+                  href="https://www.kali.org/"
+                  target="_blank"
+                  class="skill-card"
+                >
+                  <i class="fa-brands fa-linux"></i>
+                  <p>Kali Linux</p>
+                </a>
+              </div>
             </div>
 
             <!-- Python -->
-            <div class="skill-card">
-              <img src="images/python.jpeg" alt="Python Logo" width="50" />
-              <p>Python</p>
+            <div class="skill-category">
+              <h3>🐍 Python</h3>
+              <div class="skill-cards">
+                <a
+                  href="https://docs.python.org/3/tutorial/"
+                  target="_blank"
+                  class="skill-card"
+                >
+                  <i class="fa-brands fa-python"></i>
+                  <p>Core Python</p>
+                </a>
+                <a
+                  href="https://docs.python.org/3/tutorial/inputoutput.html"
+                  target="_blank"
+                  class="skill-card"
+                >
+                  <i class="fa-solid fa-file-code"></i>
+                  <p>File Handling</p>
+                </a>
+                <a
+                  href="https://www.geeksforgeeks.org/python-for-cyber-security/"
+                  target="_blank"
+                  class="skill-card"
+                >
+                  <i class="fa-solid fa-shield-halved"></i>
+                  <p>Python for Cyber Security</p>
+                </a>
+              </div>
             </div>
-
-            <!-- Java -->
-            <div class="skill-card">
-              <img src="images/java.png" alt="GitHub Logo" width="50" />
-              <p>Java</p>
-            </div>
-
-            <!-- My SQL -->
-            <div class="skill-card">
-              <img src="images/sql.png" alt="React Logo" width="50" />
-              <p>MySQL</p>
-            </div>
-
-            <!-- Github -->
-            <div class="skill-card">
-              <img src="images/git.png" alt="Node.js Logo" width="50" />
-              <p>GitHub</p>
-            </div>
-
-            <!-- MongoDB  -->
-            <div class="skill-card">
-              <img src="images/notion.png" alt="MongoDB Logo" width="50" />
-              <p>Notion AI</p>
-            </div> 
-
-            <!-- Linux -->
-            <div class="skill-card">
-              <img src="images/kali.png" alt="Linux Logo" width="50" />
-              <p>Kali Linux</p>
-              <div></div>
+            <!-- Tools & Technologies -->
+            <div class="skill-category">
+              <h3>🛠 Tools & Technologies</h3>
+              <div class="skill-cards">
+                <a
+                  href="https://git-scm.com/"
+                  target="_blank"
+                  class="skill-card"
+                >
+                  <i class="fa-brands fa-git-alt" style="color: #f05032"></i>
+                  <p>Git</p>
+                </a>
+                <a
+                  href="https://github.com/"
+                  target="_blank"
+                  class="skill-card"
+                >
+                  <i class="fa-brands fa-github"></i>
+                  <p>GitHub</p>
+                </a>
+                <a
+                  href="https://www.notion.so/"
+                  target="_blank"
+                  class="skill-card"
+                >
+                  <i class="fa-solid fa-note-sticky"></i>
+                  <p>Notion</p>
+                </a>
+                <a
+                  href="https://www.mysql.com/"
+                  target="_blank"
+                  class="skill-card"
+                >
+                  <i class="fa-solid fa-database" style="color: #00618a"></i>
+                  <p>MySQL</p>
+                </a>
+                <a
+                  href="https://www.linux.org/"
+                  target="_blank"
+                  class="skill-card"
+                >
+                  <i class="fa-brands fa-linux"></i>
+                  <p>Linux</p>
+                </a>
+                <a
+                  href="https://replit.com/"
+                  target="_blank"
+                  class="skill-card"
+                >
+                  <i class="fa-solid fa-code"></i>
+                  <p>Replit</p>
+                </a>
+                <a
+                  href="https://code.visualstudio.com/"
+                  target="_blank"
+                  class="skill-card"
+                >
+                  <i class="fa-solid fa-code-branch"></i>
+                  <p>VS Code</p>
+                </a>
+                <a
+                  href="https://www.figma.com/"
+                  target="_blank"
+                  class="skill-card"
+                >
+                  <i class="fa-brands fa-figma"></i>
+                  <p>Figma</p>
+                </a>
+                <a
+                  href="https://www.canva.com/"
+                  target="_blank"
+                  class="skill-card"
+                >
+                  <i class="fa-solid fa-palette"></i>
+                  <p>Canva</p>
+                </a>
+                <a
+                  href="https://www.capcut.com/"
+                  target="_blank"
+                  class="skill-card"
+                >
+                  <i class="fa-solid fa-video"></i>
+                  <p>VN Editor</p>
+                </a>
+              </div>
             </div>
           </div>
         </section>
