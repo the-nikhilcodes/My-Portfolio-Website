@@ -316,7 +316,7 @@ button {
 .skills-section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #00c3ff;
+  /* color: #00c3ff; */
   border-bottom: 2px solid #00c3ff;
   display: inline-block;
   padding-bottom: 5px;
@@ -334,7 +334,7 @@ button {
   background: #1c2541;
   padding: 20px;
   border-radius: 15px;
-  width: 300px;
+  width: 500px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
@@ -375,3 +375,150 @@ button {
   font-size: 0.9rem;
   margin: 0;
  }
+
+ /* Project Section Styling */
+.projects-section {
+  padding: 60px 40px;
+  text-align: center;
+  background: #0d1117;
+  color: #e6edf3;
+  font-family: 'Poppins', sans-serif;
+}
+
+.projects-section h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 25px;
+  position: relative;
+  display: inline-block;
+}
+
+.projects-section h2::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 3px;
+  background: linear-gradient(90deg, #007bff, #00d4ff);
+  margin: 8px auto 0;
+  border-radius: 3px;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+  margin-bottom: 30px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  margin: 6px;
+  background: #161b22;
+  color: #e6edf3;
+  border: 1px solid #30363d;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: linear-gradient(90deg, #007bff, #00d4ff);
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
+}
+
+/* Project Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+/* Project Card */
+.project-card {
+  background: #161b22;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: left;
+  transition: all 0.35s ease;
+  border: 1px solid #21262d;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 123, 255, 0.3);
+  border-color: #007bff;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Tags */
+.tags span {
+  display: inline-block;
+  margin: 4px 6px 4px 0;
+  padding: 6px 12px;
+  background: #21262d;
+  border: 1px solid #30363d;
+  border-radius: 20px;
+  font-size: 13px;
+  color: #c9d1d9;
+  transition: 0.3s;
+}
+
+.tags span:hover {
+  background: linear-gradient(90deg, #007bff, #00d4ff);
+  color: #fff;
+  transform: scale(1.08);
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 15px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #444, #666);
+  color: #fff;
+  margin-right: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #007bff, #00d4ff);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn.live {
+  background: linear-gradient(90deg, #28a745, #34d058);
+}
+
+.btn.live:hover {
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4);
+}
+
+.btn.disabled {
+  background: #555;
+  pointer-events: none;
+  opacity: 0.5;
+}

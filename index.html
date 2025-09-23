@@ -18,6 +18,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <script src="script.js"></script>
   </head>
   <body>
     <main class="main-container">
@@ -62,43 +63,42 @@
               <button>Hire Me</button>
               <button class="border-btn">My Works</button>
             </div>
-            <!-- Social Icon  --> 
-           
-          <div class="social-icons">
-            <!-- GitHub -->
-            <a
-              href="https://github.com/the-nikhilcodes"
-              target="_blank"
-              class="icon github"
-            >
-              <i class="fab fa-github"></i>
-            </a>
+            <!-- Social Icon  -->
 
-            <!-- LinkedIn -->
-            <a
-              href="https://www.linkedin.com/in/nikhil-agrahari"
-              target="_blank"
-              class="icon linkedin"
-            >
-              <i class="fab fa-linkedin"></i>
-            </a>
+            <div class="social-icons">
+              <!-- GitHub -->
+              <a
+                href="https://github.com/the-nikhilcodes"
+                target="_blank"
+                class="icon github"
+              >
+                <i class="fab fa-github"></i>
+              </a>
 
-            <!-- Instagram -->
-            <a
-              href="https://www.instagram.com/codewith.nikhil"
-              target="_blank"
-              class="icon instagram"
-            >
-              <i class="fab fa-instagram"></i>
-            </a>
-          </div>
+              <!-- LinkedIn -->
+              <a
+                href="https://www.linkedin.com/in/nikhil-agrahari"
+                target="_blank"
+                class="icon linkedin"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+
+              <!-- Instagram -->
+              <a
+                href="https://www.instagram.com/codewith.nikhil"
+                target="_blank"
+                class="icon instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
           </div>
           <div class="image-container">
             <img src="Images/My-Pro_Img,,,,.png" alt="Profile Image" />
           </div>
-
         </section>
-         <section class="about-section">
+        <section class="about-section">
           <h2>About Me</h2>
           <div class="about-container">
             <div class="about-img">
@@ -358,6 +358,93 @@
                   <i class="fa-solid fa-video"></i>
                   <p>VN Editor</p>
                 </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="projects" class="projects-section">
+          <h2>My Projects</h2>
+
+          <!-- Filter Buttons -->
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="web">
+              Web Development
+            </button>
+            <button class="filter-btn" data-category="python">Python</button>
+            <button class="filter-btn" data-category="frontend">
+              Frontend
+            </button>
+            <button class="filter-btn" data-category="fullstack">
+              Full Stack
+            </button>
+            <button class="filter-btn" data-category="fullstack">
+              Python
+            </button>
+            <button class="filter-btn" data-category="fullstack">
+              Game Development
+            </button>
+            <button class="filter-btn" data-category="fullstack">
+              E-Commerce
+            </button>
+          </div>
+
+          <!-- Projects Grid -->
+          <div class="projects-grid">
+
+            <!-- Amazone Clone Project -->
+            <div class="project-card" data-category="web">
+              <img src="images/Clone.png" alt="Amazon" />
+              <h3>Amazon UI Clone</h3>
+              <p>A UI Clone built with HTML, CSS</p>
+              <div class="tags">
+                <span>HTML</span> <span>CSS</span> 
+              </div>
+              <div class="buttons">
+                <a href="#" class="btn"> Source Code</a>
+                <a href="#" class="btn live">Live</a>
+              </div>
+            </div>
+
+            <!-- Fast feast Project -->
+
+            <div class="project-card" data-category="web">
+              <img src="images/FoodImage.png" alt="Food Delivery Website" />
+              <h3>FastFeast</h3>
+              <p>A food delivery website built with HTML, CSS ,js </p>
+              <div class="tags">
+                <span>HTML</span> <span>CSS</span>  <span>JS</span>
+              </div>
+              <div class="buttons">
+                <a href="#" class="btn"> Source Code</a>
+                <a href="#" class="btn live">Live</a>
+              </div>
+            </div>
+
+            <!-- Python Project -->
+            <div class="project-card" data-category="python">
+              <img src="images/YTimg.png" alt="Project Screenshot" />
+              <h3>YouTube Video Downloader</h3>
+              <p>A Python-based tool for download a yt video to paste the link.</p>
+              <div class="tags">
+                <span>Python</span>
+              </div>
+              <div class="buttons">
+                <a href="#" class="btn">Code</a>
+              </div>
+            </div>
+
+            <!-- Placeholder -->
+            <div class="project-card" data-category="fullstack">
+              <img src="images/Commign_soon.png" alt="Coming Soon" />
+              <h3>Future Project</h3>
+              <p>🚀 Coming Soon...</p>
+              <div class="tags">
+                <span>React</span> <span>Node.js</span> <span>MongoDB</span>
+              </div>
+              <div class="buttons">
+                <a href="#" class="btn disabled">Souce Code</a>
+                <a href="#" class="btn disabled">Live Demo</a>
               </div>
             </div>
           </div>
