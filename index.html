@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nikhil Agrahari</title>
+    <title>My Portfolio Website</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -33,10 +33,10 @@
               <a href="#" class="navlinks">About</a>
             </li>
             <li>
-              <a href="#" class="navlinks">Resume</a>
+              <a href="#" class="navlinks">Skills</a>
             </li>
             <li>
-              <a href="#" class="navlinks">Services</a>
+              <a href="#" class="navlinks">Articles</a>
             </li>
             <li>
               <a href="#" class="navlinks">Projects</a>
@@ -50,63 +50,66 @@
           </a>
         </nav>
 
+        <!-- HERO -->
         <section class="hero-section">
           <div class="content">
             <h4>Hello!</h4>
             <h1>I'm <span>Nikhil Agrahari</span></h1>
+
             <p>
-              A BCA student Passionate about Web Development, Cybersecurity, and
-              Ethical Hacking"
+              I’m a passionate developer with expertise in web design, front-end
+              development, and creating modern, user-friendly applications.
+              Skilled in HTML, CSS, JavaScript, and frameworks, I love turning
+              ideas into functional and visually appealing solutions.
             </p>
 
-            <div class="btn-container">
-              <button>Hire Me</button>
-              <button class="border-btn">My Works</button>
-            </div>
-            <!-- Social Icon  -->
+            <div class="btn-social">
+              <div class="btn-container">
+                <!-- use <a> for links so they can point to sections -->
+                <a href="#contact" class="btn">Hire Me</a>
+                <a href="#projects" class="btn border-btn">My Works</a>
+              </div>
 
-            <div class="social-icons">
-              <!-- GitHub -->
-              <a
-                href="https://github.com/the-nikhilcodes"
-                target="_blank"
-                class="icon github"
-              >
-                <i class="fab fa-github"></i>
-              </a>
-
-              <!-- LinkedIn -->
-              <a
-                href="https://www.linkedin.com/in/nikhil-agrahari"
-                target="_blank"
-                class="icon linkedin"
-              >
-                <i class="fab fa-linkedin"></i>
-              </a>
-
-              <!-- Instagram -->
-              <a
-                href="https://www.instagram.com/codewith.nikhil"
-                target="_blank"
-                class="icon instagram"
-              >
-                <i class="fab fa-instagram"></i>
-              </a>
+              <div class="social-icons">
+                <a
+                  href="https://github.com/nikhilagrahari530"
+                  target="_blank"
+                  title="GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/nikhilagrahari530"
+                  target="_blank"
+                  title="LinkedIn"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/yourusername"
+                  target="_blank"
+                  title="Instagram"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
             </div>
           </div>
+
           <div class="image-container">
+            <!-- keep or remove image file — if you don't want an image, you can delete this element -->
             <img src="Images/My-Pro_Img,,,,.png" alt="Profile Image" />
           </div>
         </section>
-        <section class="about-section">
-          <h2>About Me</h2>
-          <div class="about-container">
-            <div class="about-img">
-              <img src="Images/arrow.png" alt="About Image" />
-            </div>
-            <div class="about-content">
+
+        <!-- ABOUT -->
+        <section class="about-section" id="about">
+          <div class="about-inner container">
+            <h2>About Me</h2>
+
+            <div class="about-card">
               <p>
-                I’m Nikhil Agrahari, a second-year BCA student at BBD
+                Hi — I’m <strong>Nikhil Agrahari</strong> ,a second-year BCA student at BBD
                 University, Lucknow, with a growing passion for web development,
                 cybersecurity, and ethical hacking.<br /><br />
                 Currently working as a web developer, I enjoy transforming
@@ -123,25 +126,25 @@
                 self-improvement—striving to innovate, collaborate, and
                 contribute to projects that truly add value. 🚀
               </p>
-              <ul>
-                <li><strong>Email:</strong> nikhilagrahari530@gmail.com</li>
-                <li><strong>Location:</strong> Lucknow, India</li>
-                <li><strong>Hobbies:</strong> Coding, Reading, Music</li>
-              </ul>
-              <div class="resume-buttons">
-                <!-- Download Resume -->
-                <a href="Images/Nikhil Resume.pdf" download>
-                  <button>Download Resume</button>
-                </a>
 
-                <!-- View Resume -->
-                <a href="Images/Nikhil Resume.pdf" target="_blank">
-                  <button class="border-btn">View Resume</button>
-                </a>
+              <div class="info-list">
+                <div><strong>Email:</strong> nikhilagrahari530@gmail.com</div>
+                <div><strong>Location:</strong> Lucknow, India</div>
+                <div><strong>Hobbies:</strong> Coding, Reading, Music</div>
+              </div>
+
+              <div class="resume-buttons">
+                <a href="Nikhil_Resume.pdf" download
+                  ><span class="btn">Download Resume</span></a
+                >
+                <a href="Nikhil_Resume.pdf" target="_blank"
+                  ><span class="btn border-btn">View Resume</span></a
+                >
               </div>
             </div>
           </div>
         </section>
+
         <!-- Skills Section -->
         <section class="skills-section">
           <h2>Skills & Technologies</h2>
@@ -367,22 +370,26 @@
 
           <!-- Filter Buttons -->
           <div class="filter-buttons">
-            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn active" data-category="all">All Projects</button>
             <button class="filter-btn" data-category="web">
+              <i class="fas fa-globe"></i>
               Web Development
             </button>
-            <button class="filter-btn" data-category="python">Python</button>
+            <button class="filter-btn" data-category="python">
+              <i class="fab fa-python"></i>Python
+            </button>
             <button class="filter-btn" data-category="frontend">
+              <i class="fas fa-code"></i>
               Frontend
             </button>
             <button class="filter-btn" data-category="fullstack">
               Full Stack
             </button>
             <button class="filter-btn" data-category="fullstack">
-              Python
+              Game Development
             </button>
             <button class="filter-btn" data-category="fullstack">
-              Game Development
+              App Development
             </button>
             <button class="filter-btn" data-category="fullstack">
               E-Commerce
@@ -391,15 +398,12 @@
 
           <!-- Projects Grid -->
           <div class="projects-grid">
-
             <!-- Amazone Clone Project -->
             <div class="project-card" data-category="web">
               <img src="images/Clone.png" alt="Amazon" />
               <h3>Amazon UI Clone</h3>
               <p>A UI Clone built with HTML, CSS</p>
-              <div class="tags">
-                <span>HTML</span> <span>CSS</span> 
-              </div>
+              <div class="tags"><span>HTML</span> <span>CSS</span></div>
               <div class="buttons">
                 <a href="#" class="btn"> Source Code</a>
                 <a href="#" class="btn live">Live</a>
@@ -411,9 +415,9 @@
             <div class="project-card" data-category="web">
               <img src="images/FoodImage.png" alt="Food Delivery Website" />
               <h3>FastFeast</h3>
-              <p>A food delivery website built with HTML, CSS ,js </p>
+              <p>A food delivery website built with HTML, CSS ,js</p>
               <div class="tags">
-                <span>HTML</span> <span>CSS</span>  <span>JS</span>
+                <span>HTML</span> <span>CSS</span> <span>JS</span>
               </div>
               <div class="buttons">
                 <a href="#" class="btn"> Source Code</a>
@@ -425,7 +429,9 @@
             <div class="project-card" data-category="python">
               <img src="images/YTimg.png" alt="Project Screenshot" />
               <h3>YouTube Video Downloader</h3>
-              <p>A Python-based tool for download a yt video to paste the link.</p>
+              <p>
+                A Python-based tool for download a yt video to paste the link.
+              </p>
               <div class="tags">
                 <span>Python</span>
               </div>
@@ -444,7 +450,7 @@
               </div>
               <div class="buttons">
                 <a href="#" class="btn disabled">Souce Code</a>
-                <a href="#" class="btn disabled">Live Demo</a>
+                <a href="#" class="btn disabled">Live </a>
               </div>
             </div>
           </div>
