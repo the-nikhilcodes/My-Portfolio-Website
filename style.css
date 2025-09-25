@@ -1,4 +1,3 @@
-
 /* Font import (keep if your HTML doesn't import this already) */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
@@ -26,6 +25,7 @@ body {
   background: linear-gradient(180deg, #030409 0%, #061021 100%);
   color: var(--white-clr);
   -webkit-font-smoothing: antialiased;
+   padding-top: 80px;  
   -moz-osx-font-smoothing: grayscale;
 }
 
@@ -51,14 +51,59 @@ body {
   letter-spacing: .08rem;
 }
 
+/* ===== Navbar Sticky ===== */
+/* Default Navbar */
 .navbar {
-  height: 80px;
-  /* smaller height for better spacing */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+    background-color: #18242e; 
+  /* background: transparent;   Transparent at top */
+  padding: 20px 40px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
 }
+
+/* Navbar links */
+.nav-links li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00c3ff;
+}
+
+nav ul li a {
+  text-decoration: none;   /* removes underline */
+  color: white;            /* keeps text white */
+  font-weight: bold;       /* optional, makes it bolder */
+}
+
+nav ul li a:hover {
+  color: #00c3ff;          /* highlight on hover */
+  text-decoration: none;   /* no underline even on hover */
+}
+
+
+/* When scrolled */
+.navbar.scrolled {
+  background: #0b132b;  /* Solid color */
+  padding: 12px 40px;   /* Smaller height */
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+}
+
 
 /* nav links */
 .navlist {
@@ -457,15 +502,15 @@ img {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
-  margin-top: 40px;
+  gap: 20px;
+  margin-top: 20px;
 }
 
 /* Category Cards */
 .skill-category {
   background: rgba(16, 24, 29, 0.9);
   padding: 25px;
-  border-radius: 18px;
+  border-radius: 20px;
   width: 480px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -479,7 +524,7 @@ img {
 
 .skill-category h3 {
   margin-bottom: 20px;
-  color: #00c3ff;
+  color: #8abbdc;
   font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -490,14 +535,14 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 18px;
+  gap: 15px;
 }
 
 .skill-card {
   background: linear-gradient(145deg, #3a506b, #1c2541);
   border-radius: 12px;
-  padding: 18px;
-  width: 120px;
+  padding: 7px;
+  width: 100px;
   text-align: center;
   transition: all 0.3s ease;
   text-decoration: none;
@@ -515,7 +560,7 @@ img {
 }
 
 .skill-card i {
-  font-size: 32px;
+  font-size: 25px;
   margin-bottom: 10px;
   transition: transform 0.3s ease;
 }
@@ -525,9 +570,9 @@ img {
 }
 
 .skill-card p {
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   margin: 0;
-  font-weight: 600;
+  font-weight: 450;
   letter-spacing: 0.3px;
 }
 
@@ -576,9 +621,9 @@ img {
   transition: all 0.3s ease;
 }
 
-.filter-btn.active,
+.filter-,
 .filter-btn:hover {
-  background: linear-gradient(90deg, #007bff, #00d4ff);
+  background: linear-gradient(90deg, #4a9f84, #00d4ff);
   color: #fff;
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
@@ -677,3 +722,152 @@ img {
   pointer-events: none;
   opacity: 0.5;
 }
+
+/* Contact Section */
+.contact-section {
+  padding: 5rem 2rem;
+  background: #0d1117;
+  color: #fff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #00c3ff;
+  border-bottom: 3px solid #00c3ff;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+/* Left Side */
+.contact-info {
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+  text-align: left;
+}
+
+.contact-info h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #f2bf31;
+}
+
+.contact-info p {
+  margin-bottom: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.contact-details p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+}
+
+.contact-details i {
+  margin-right: 10px;
+  color: #00c3ff;
+}
+
+.social-links {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #161b22;
+  padding: 12px;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  background: #00c3ff;
+  color: #000;
+}
+
+/* Right Side */
+.contact-form {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+  background: #161b22;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background: #1e293b;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background: #2d3f59;
+  border: 1px solid #00c3ff;
+}
+
+.btn-submit {
+  background: #00c3ff;
+  color: #000;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-submit:hover {
+  background: #f2bf31;
+  color: #000;
+}
+
+/* ===== Footer Styling ===== */
+.footer {
+  background: #0b132b;
+  color: #fff;
+  padding: 20px 10px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
