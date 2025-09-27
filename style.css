@@ -91,6 +91,15 @@ nav ul li a {
   font-weight: bold;       /* optional, makes it bolder */
 }
 
+nav ul {
+  list-style: none;      /* removes dots */
+  padding: 0;            /* removes default padding */
+  margin: 0;             /* removes default margin */
+  display: flex;         /* keeps items in a row */
+  gap: 20px;             /* space between links */
+}
+
+
 nav ul li a:hover {
   color: #00c3ff;          /* highlight on hover */
   text-decoration: none;   /* no underline even on hover */
