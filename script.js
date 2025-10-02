@@ -148,6 +148,8 @@ document.addEventListener("DOMContentLoaded", function () {
      THEME TOGGLE (Dark <-> Light)
      ---------------------- */
   const themeToggle = document.getElementById("theme-toggle");
+  document.body.classList.toggle("light-mode");
+
 
   // decide initial theme: localStorage -> system preference -> 'dark'
   const savedTheme = localStorage.getItem("theme");

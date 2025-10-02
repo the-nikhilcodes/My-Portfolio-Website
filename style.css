@@ -755,7 +755,7 @@ img {
 .section-title {
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  color: #ccff00;
+  color: #1c165e;
   border-bottom: 3px solid #9f297e;
   display: inline-block;
   padding-bottom: 8px;
@@ -940,7 +940,7 @@ html[data-theme="light"] {
   /* main text color (dark) */
   --black-clr: #ffffff;
   /* used where you expect white backgrounds */
-  --muted-clr: #878f99;
+  --muted-clr: #000000;
   /* muted text */
   --yellow-clr: #d4a521;
   /* accent */
@@ -985,35 +985,96 @@ html[data-theme="light"] .hero-section p {
   color: var(--muted-clr);
 }
 
-/* cards (projects, skills, contact, about) */
-html[data-theme="light"] .projects-section,
-html[data-theme="light"] .skills-section,
-html[data-theme="light"] .skill-card,
-html[data-theme="light"] .contact-section,
-html[data-theme="light"] .contact-form {
+/* ============================= */
+/* 🌞 LIGHT THEME - PROJECTS */
+/* ============================= */
+html[data-theme="light"] .projects-section {
   background: #ffffff;
-  color: var(--white-clr);
+  color: #000000;
   border: 1px solid rgba(12, 18, 20, 0.06);
   box-shadow: 0 8px 20px rgba(12, 18, 20, 0.04);
 }
 
-/* adjust tag styles on light */
-html[data-theme="light"] .tags span,
-html[data-theme="light"] .tags span:hover {
+html[data-theme="light"] .projects-section h3,
+html[data-theme="light"] .projects-section p {
+  color: #f9f9f9;
+}
+
+/* ============================= */
+/* 🌞 LIGHT THEME - SKILLS */
+/* ============================= */
+html[data-theme="light"] .skills-section {
+  background: #ffffff;
+  color: #000000;
+}
+
+html[data-theme="light"] .skill-card {
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid rgba(12, 18, 20, 0.06);
+  box-shadow: 0 4px 12px rgba(12, 18, 20, 0.05);
+}
+
+html[data-theme="light"] .skill-card h3,
+html[data-theme="light"] .skill-card p {
+  color: #000000;
+}
+
+/* ============================= */
+/* 🌞 LIGHT THEME - ABOUT */
+/* ============================= */
+html[data-theme="light"] .about-section {
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid rgba(12, 18, 20, 0.06);
+  box-shadow: 0 8px 20px rgba(12, 18, 20, 0.04);
+}
+
+html[data-theme="light"] .about-section h2,
+html[data-theme="light"] .about-section p {
+  color: #000000;
+}
+
+/* ============================= */
+/* 🌞 LIGHT THEME - CONTACT */
+/* ============================= */
+html[data-theme="light"] .contact-section {
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid rgba(12, 18, 20, 0.06);
+  box-shadow: 0 8px 20px rgba(12, 18, 20, 0.04);
+}
+
+html[data-theme="light"] .contact-form {
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid rgba(12, 18, 20, 0.06);
+}
+
+html[data-theme="light"] .contact-info p {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* ============================= */
+/* 🌞 LIGHT THEME - TAGS */
+/* ============================= */
+html[data-theme="light"] .tags span {
   background: #f2f4f7;
   color: #000000;
   border-color: rgba(12, 18, 20, 0.06);
-  transform: none;
 }
 
-/* contact left panel links */
+html[data-theme="light"] .tags span:hover {
+  background: var(--accent-clr);
+  color: #170e45;
+}
+
+/* ============================= */
+/* 🌞 LIGHT THEME - SOCIAL LINKS */
+/* ============================= */
 html[data-theme="light"] .social-links a {
   background: #f2f4f7;
-  color: #000000;
-}
-
-html[data-theme="light"] .contact-info p  {
-  background: #ffffff;
   color: #000000;
 }
 
@@ -1024,7 +1085,7 @@ html[data-theme="light"] .social-links a:hover {
 
 /* buttons: keep colored accents readable on light background */
 html[data-theme="light"] .btn {
-  color: #051417;
+  color: #0e0d0d;
   border: 1px solid rgba(12, 18, 20, 0.06);
 }
 
