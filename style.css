@@ -25,7 +25,7 @@ body {
   background: linear-gradient(180deg, #030409 0%, #061021 100%);
   color: var(--white-clr);
   -webkit-font-smoothing: antialiased;
-   padding-top: 80px;  
+  padding-top: 80px;
   -moz-osx-font-smoothing: grayscale;
 }
 
@@ -59,7 +59,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 1000;
-    background-color: #18242e; 
+  background-color: #18242e;
   /* background: transparent;   Transparent at top */
   padding: 20px 40px;
   display: flex;
@@ -86,30 +86,42 @@ body {
 }
 
 nav ul li a {
-  text-decoration: none;   /* removes underline */
-  color: white;            /* keeps text white */
-  font-weight: bold;       /* optional, makes it bolder */
+  text-decoration: none;
+  /* removes underline */
+  color: white;
+  /* keeps text white */
+  font-weight: bold;
+  /* optional, makes it bolder */
 }
 
 nav ul {
-  list-style: none;      /* removes dots */
-  padding: 0;            /* removes default padding */
-  margin: 0;             /* removes default margin */
-  display: flex;         /* keeps items in a row */
-  gap: 20px;             /* space between links */
+  list-style: none;
+  /* removes dots */
+  padding: 0;
+  /* removes default padding */
+  margin: 0;
+  /* removes default margin */
+  display: flex;
+  /* keeps items in a row */
+  gap: 20px;
+  /* space between links */
 }
 
 
 nav ul li a:hover {
-  color: #00c3ff;          /* highlight on hover */
-  text-decoration: none;   /* no underline even on hover */
+  color: #00c3ff;
+  /* highlight on hover */
+  text-decoration: none;
+  /* no underline even on hover */
 }
 
 
 /* When scrolled */
 .navbar.scrolled {
-  background: #0b132b;  /* Solid color */
-  padding: 12px 40px;   /* Smaller height */
+  background: #0b132b;
+  /* Solid color */
+  padding: 12px 40px;
+  /* Smaller height */
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
 }
 
@@ -310,12 +322,12 @@ img {
 
 .image-container::after {
   content: '';
-  position: absolute;
+  /* position: absolute; */
   left: 0;
   bottom: -6px;
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.7) 80%);
   width: 100%;
-  height: 40%;
+  height: 80%;
   z-index: 1;
 }
 
@@ -880,3 +892,149 @@ img {
   color: #ccc;
 }
 
+
+
+/* ----------------------------
+   Theme toggle button styling
+   ---------------------------- */
+.theme-toggle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content:center;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  background: transparent;
+  color: var(--white-clr);
+  cursor: pointer;
+  transition: all .22s ease;
+  margin-left: 700px;
+  /* small spacing */
+}
+
+.theme-toggle i {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.theme-toggle:hover {
+  transform: translateY(-3px);
+  border-color: var(--yellow-clr);
+}
+
+/* Pressed look */
+.theme-toggle[aria-pressed="true"] {
+  background: linear-gradient(90deg, var(--yellow-clr), var(--hire-clr));
+  color: #051417;
+  border-color: transparent;
+}
+
+/* --------------------------------
+   LIGHT THEME overrides (data-theme="light")
+   Put these after all other CSS rules
+   -------------------------------- */
+html[data-theme="light"] {
+  /* swap these values for light appearance */
+  --white-clr: #0b132b;
+  /* main text color (dark) */
+  --black-clr: #ffffff;
+  /* used where you expect white backgrounds */
+  --muted-clr: #878f99;
+  /* muted text */
+  --yellow-clr: #d4a521;
+  /* accent */
+  --accent-clr: #0b9c70;
+  --hire-clr: #2e9c70;
+  --bg-dark: #f6f8fb;
+  /* used for large background */
+  --card-bg: rgba(0, 0, 0, 0.03);
+}
+
+/* specific overrides so components become light-friendly */
+html[data-theme="light"] body {
+  background: linear-gradient(180deg, #f6f8fb 0%, #ffffff 100%);
+  color: var(--white-clr);
+}
+
+/* navbar */
+html[data-theme="light"] .navbar {
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(12, 18, 20, 0.06);
+}
+
+html[data-theme="light"] .logo {
+  color: var(--yellow-clr);
+}
+
+html[data-theme="light"] .navlinks {
+  color: #0b132b;
+}
+
+html[data-theme="light"] .navlinks::before {
+  background: linear-gradient(90deg, var(--yellow-clr), var(--hire-clr));
+}
+
+/* hero / headings */
+html[data-theme="light"] .hero-section h1,
+html[data-theme="light"] .hero-section h4 {
+  color: var(--white-clr);
+}
+
+html[data-theme="light"] .hero-section p {
+  color: var(--muted-clr);
+}
+
+/* cards (projects, skills, contact, about) */
+html[data-theme="light"] .projects-section,
+html[data-theme="light"] .skills-section,
+html[data-theme="light"] .skill-card,
+html[data-theme="light"] .contact-section,
+html[data-theme="light"] .contact-form {
+  background: #ffffff;
+  color: var(--white-clr);
+  border: 1px solid rgba(12, 18, 20, 0.06);
+  box-shadow: 0 8px 20px rgba(12, 18, 20, 0.04);
+}
+
+/* adjust tag styles on light */
+html[data-theme="light"] .tags span,
+html[data-theme="light"] .tags span:hover {
+  background: #f2f4f7;
+  color: #000000;
+  border-color: rgba(12, 18, 20, 0.06);
+  transform: none;
+}
+
+/* contact left panel links */
+html[data-theme="light"] .social-links a {
+  background: #f2f4f7;
+  color: #000000;
+}
+
+html[data-theme="light"] .contact-info p  {
+  background: #ffffff;
+  color: #000000;
+}
+
+html[data-theme="light"] .social-links a:hover {
+  background: var(--accent-clr);
+  color: #170e45;
+}
+
+/* buttons: keep colored accents readable on light background */
+html[data-theme="light"] .btn {
+  color: #051417;
+  border: 1px solid rgba(12, 18, 20, 0.06);
+}
+
+html[data-theme="light"] .btn:hover {
+  box-shadow: 0 6px 20px rgba(11, 156, 112, 0.12);
+}
+
+/* small responsive tweak - ensure toggle looks fine on mobile */
+@media (max-width: 900px) {
+  .theme-toggle {
+    margin-right: 6px;
+  }
+}
