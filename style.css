@@ -545,7 +545,7 @@ img {
 
 .skill-category h3 {
   margin-bottom: 20px;
-  color: #8abbdc;
+  color: #fbfcff;
   font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -903,7 +903,7 @@ img {
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   border: 2px solid rgba(255, 255, 255, 0.08);
   background: transparent;
   color: var(--white-clr);
@@ -1003,7 +1003,7 @@ html[data-theme="light"] .projects-section p {
 /* ============================= */
 /* 🌞 LIGHT THEME - SKILLS */
 /* ============================= */
-html[data-theme="light"] .skills-section {
+html[data-theme="light"] .skills-section{
   background: #ffffff;
   color: #000000;
 }
