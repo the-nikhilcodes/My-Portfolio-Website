@@ -1,0 +1,206 @@
+/* articles.css - styles specific to the Articles home page */
+
+.articles-hero {
+  padding: 36px 0 24px;
+  text-align: left;
+}
+
+.articles-hero h1 {
+  font-size: clamp(28px, 4.5vw, 42px);
+  margin-bottom: 6px;
+  color: var(--white-clr);
+  font-weight: 700;
+}
+
+.articles-hero .subtitle {
+  color: var(--muted-clr);
+  margin-bottom: 18px;
+}
+
+/* controls row: search + filters */
+.articles-controls {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* search input */
+#article-search {
+  width: 420px;
+  max-width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: #0f1720;
+  color: var(--muted-clr);
+  border: 1px solid rgba(255,255,255,0.04);
+  outline: none;
+  transition: box-shadow .18s ease, border-color .18s ease;
+}
+
+#article-search::placeholder { color: rgba(255,255,255,0.35); }
+
+#article-search:focus {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+  border-color: var(--accent-clr);
+  color: var(--white-clr);
+}
+
+/* filter chips */
+.articles-filters {
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.articles-filters .filter-btn {
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.06);
+  color: var(--muted-clr);
+  cursor: pointer;
+  transition: all .18s ease;
+}
+
+.articles-filters .filter-btn.active,
+.articles-filters .filter-btn:hover {
+  background: linear-gradient(90deg, var(--accent-clr), var(--hire-clr));
+  color: #051417;
+  transform: translateY(-3px);
+}
+
+/* grid */
+.articles-grid {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+}
+
+/* card */
+.article-card {
+  background: #0f1620;
+  border-radius: 12px;
+  overflow: hidden;
+  display:flex;
+  flex-direction:column;
+  transition: transform .22s ease, box-shadow .22s ease;
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+.article-card:focus,
+.article-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.6);
+  outline: none;
+}
+
+/* image */
+.article-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display:block;
+}
+
+/* body */
+.article-body {
+  padding: 14px 16px 18px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.article-title {
+  margin:0;
+  font-size: 1.05rem;
+  color: var(--white-clr);
+}
+
+.article-excerpt {
+  margin:0;
+  font-size: .95rem;
+  color: var(--muted-clr);
+  line-height:1.5;
+}
+
+/* meta */
+.article-meta {
+  display:flex;
+  gap:10px;
+  align-items:center;
+  color:var(--muted-clr);
+  font-size:.85rem;
+}
+
+.article-meta .tag {
+  background: rgba(255,255,255,0.03);
+  padding:6px 10px;
+  border-radius:999px;
+  border: 1px solid rgba(255,255,255,0.03);
+  font-size:.80rem;
+  color:var(--muted-clr);
+}
+
+/* actions */
+.article-actions {
+  margin-top:auto;
+  display:flex;
+  gap:10px;
+}
+
+.article-actions .btn {
+  padding:8px 12px;
+  border-radius:8px;
+  background: linear-gradient(90deg,#2c3e50,#4a6a8a);
+  color:#fff;
+  text-decoration:none;
+  border: none;
+  font-weight:600;
+}
+
+.article-actions .btn.border-btn {
+  background: transparent;
+  color:var(--muted-clr);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.no-results p {
+  color:var(--muted-clr);
+}
+
+/* LIGHT THEME overrides (page-specific tweaks) */
+html[data-theme="light"] #article-search {
+  background: #ffffff;
+  color: #0b132b;
+  border: 1px solid rgba(12,18,20,0.06);
+}
+html[data-theme="light"] .article-card {
+  background: #ffffff;
+  color: #0b132b;
+  border: 1px solid rgba(12,18,20,0.06);
+}
+html[data-theme="light"] .articles-hero h1,
+html[data-theme="light"] .article-title {
+  color: #0b132b;
+}
+html[data-theme="light"] .article-excerpt,
+html[data-theme="light"] .article-meta,
+html[data-theme="light"] .articles-hero .subtitle {
+  color: #26303b;
+}
+html[data-theme="light"] .articles-filters .filter-btn {
+  border-color: rgba(12,18,20,0.06);
+  color: #26303b;
+}
+html[data-theme="light"] .articles-filters .filter-btn.active {
+  color: #fff;
+}
+
+/* Responsive tweaks */
+@media (max-width: 780px) {
+  .articles-controls { flex-direction: column; align-items: stretch; }
+  #article-search { order: 1; }
+  .articles-filters { order: 2; justify-content:flex-start; }
+}
