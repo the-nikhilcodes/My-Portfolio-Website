@@ -69,16 +69,16 @@ document.addEventListener("DOMContentLoaded", function () {
   navLinks.forEach((link) => {
     link.addEventListener("click", function (e) {
       const href = link.getAttribute("href") || "";
-      if (!href.startsWith("#") || href === "#") {
-        if (href === "#" || !href.startsWith("#")) {
-          e.preventDefault();
-          const target = linkToSection.get(link);
-          scrollToSection(target);
-        }
-        return;
+
+      // ✅ Allow normal links like "articles.html"
+      if (href && !href.startsWith("#")) {
+        return; // let the browser handle it normally
       }
+
+      // Handle internal scroll links
       e.preventDefault();
-      const target = linkToSection.get(link) || document.getElementById(href.slice(1));
+      const target =
+        linkToSection.get(link) || document.getElementById(href.slice(1));
       scrollToSection(target);
     });
   });
@@ -150,10 +150,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const themeToggle = document.getElementById("theme-toggle");
   document.body.classList.toggle("light-mode");
 
-
   // decide initial theme: localStorage -> system preference -> 'dark'
   const savedTheme = localStorage.getItem("theme");
-  const systemPrefLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+  const systemPrefLight =
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: light)").matches;
   const initialTheme = savedTheme || (systemPrefLight ? "light" : "dark");
 
   function applyTheme(theme) {
@@ -181,7 +182,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // click handler
   if (themeToggle) {
     themeToggle.addEventListener("click", function () {
-      const current = document.documentElement.getAttribute("data-theme") === "light" ? "light" : "dark";
+      const current =
+        document.documentElement.getAttribute("data-theme") === "light"
+          ? "light"
+          : "dark";
       applyTheme(current === "light" ? "dark" : "light");
     });
 
@@ -193,4 +197,5 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
+  
 });
