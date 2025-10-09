@@ -1096,7 +1096,7 @@ html[data-theme="light"] .btn:hover {
 /* small responsive tweak - ensure toggle looks fine on mobile */
 @media (max-width: 900px) {
   .navlist.active {
-    display: flex;
+    display: block;
     flex-direction: column;
     position: absolute;
     top: 70px;       /* adjust below navbar */
