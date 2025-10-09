@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
     link.addEventListener("click", function (e) {
       const href = link.getAttribute("href") || "";
 
-      // ✅ Allow normal links like "articles.html"
+      // âœ… Allow normal links like "articles.html"
       if (href && !href.startsWith("#")) {
         return; // let the browser handle it normally
       }
@@ -144,11 +144,23 @@ document.addEventListener("DOMContentLoaded", function () {
     updateActiveLink();
   });
 
+  // Add Toggle Script
+
+  document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector(".hamburger");
+  const navlist = document.querySelector(".navlist");
+
+  hamburger.addEventListener("click", (e) => {
+    e.preventDefault();
+    navlist.classList.toggle("active");
+  });
+});
+
+
   /* ----------------------
      THEME TOGGLE (Dark <-> Light)
      ---------------------- */
   const themeToggle = document.getElementById("theme-toggle");
-  document.body.classList.toggle("light-mode");
 
   // decide initial theme: localStorage -> system preference -> 'dark'
   const savedTheme = localStorage.getItem("theme");

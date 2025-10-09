@@ -986,7 +986,7 @@ html[data-theme="light"] .hero-section p {
 }
 
 /* ============================= */
-/* 🌞 LIGHT THEME - PROJECTS */
+/* ðŸŒž LIGHT THEME - PROJECTS */
 /* ============================= */
 html[data-theme="light"] .projects-section {
   background: #ffffff;
@@ -1001,7 +1001,7 @@ html[data-theme="light"] .projects-section p {
 }
 
 /* ============================= */
-/* 🌞 LIGHT THEME - SKILLS */
+/* HTML LIGHT THEME - SKILLS */
 /* ============================= */
 html[data-theme="light"] .skills-section{
   background: #ffffff;
@@ -1021,7 +1021,7 @@ html[data-theme="light"] .skill-card p {
 }
 
 /* ============================= */
-/* 🌞 LIGHT THEME - ABOUT */
+/* HTML LIGHT THEME - ABOUT */
 /* ============================= */
 html[data-theme="light"] .about-section {
   background: #ffffff;
@@ -1036,7 +1036,7 @@ html[data-theme="light"] .about-section p {
 }
 
 /* ============================= */
-/* 🌞 LIGHT THEME - CONTACT */
+/* ðŸŒž LIGHT THEME - CONTACT */
 /* ============================= */
 html[data-theme="light"] .contact-section {
   background: #ffffff;
@@ -1057,7 +1057,7 @@ html[data-theme="light"] .contact-info p {
 }
 
 /* ============================= */
-/* 🌞 LIGHT THEME - TAGS */
+/* ðŸŒž LIGHT THEME - TAGS */
 /* ============================= */
 html[data-theme="light"] .tags span {
   background: #f2f4f7;
@@ -1071,7 +1071,7 @@ html[data-theme="light"] .tags span:hover {
 }
 
 /* ============================= */
-/* 🌞 LIGHT THEME - SOCIAL LINKS */
+/* ðŸŒž LIGHT THEME - SOCIAL LINKS */
 /* ============================= */
 html[data-theme="light"] .social-links a {
   background: #f2f4f7;
@@ -1095,7 +1095,16 @@ html[data-theme="light"] .btn:hover {
 
 /* small responsive tweak - ensure toggle looks fine on mobile */
 @media (max-width: 900px) {
-  .theme-toggle {
-    margin-right: 6px;
+  .navlist.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;       /* adjust below navbar */
+    right: 20px;
+    background: #18242e;
+    padding: 20px;
+    border-radius: 8px;
+    gap: 1rem;
+    z-index: 999;
   }
 }
