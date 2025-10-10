@@ -1,132 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Articles & Blog | Nikhil Agrahari</title>
-    <meta name="description" content="Read articles about web development, cybersecurity, and technology by Nikhil Agrahari">
-    
+    <meta
+      name="description"
+      content="Read articles about web development, cybersecurity, and technology by Nikhil Agrahari"
+    />
+
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="articles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="articles.css" />
+  </head>
+  <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo">Nikhil<span>.dev</span></a>
-            
-            <ul class="navlist">
-                <li><a href="index.html#home" class="navlinks">Home</a></li>
-                <li><a href="index.html#about" class="navlinks">About</a></li>
-                <li><a href="index.html#skills" class="navlinks">Skills</a></li>
-                <li><a href="index.html#projects" class="navlinks">Projects</a></li>
-                <li><a href="index.html#contact" class="navlinks">Contact</a></li>
-                <li><a href="projects.html" class="navlinks active">Articles</a></li>
-            </ul>
-            
-            <div class="nav-right">
-                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-                    <i class="fas fa-moon"></i>
-                </button>
-                <button class="hamburger" id="hamburger" aria-label="Menu">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
+      <div class="nav-container">
+        <a href="index.html" class="logo">Nikhil<span>.dev</span></a>
+
+        <ul class="navlist">
+          <li><a href="index.html#home" class="navlinks">Home</a></li>
+          <li><a href="index.html#about" class="navlinks">About</a></li>
+          <li><a href="index.html#skills" class="navlinks">Skills</a></li>
+          <li><a href="index.html#projects" class="navlinks">Projects</a></li>
+          <li><a href="index.html#contact" class="navlinks">Contact</a></li>
+          <li><a href="projects.html" class="navlinks active">Articles</a></li>
+        </ul>
+
+        <div class="nav-right">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Toggle theme"
+          >
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="hamburger" id="hamburger" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
+      </div>
     </nav>
 
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
-    
+
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobile-menu">
-        <ul class="mobile-navlist">
-            <li><a href="index.html#home" class="mobile-navlinks">Home</a></li>
-            <li><a href="index.html#about" class="mobile-navlinks">About</a></li>
-            <li><a href="index.html#skills" class="mobile-navlinks">Skills</a></li>
-            <li><a href="index.html#projects" class="mobile-navlinks">Projects</a></li>
-            <li><a href="index.html#contact" class="mobile-navlinks">Contact</a></li>
-            <li><a href="projects.html" class="mobile-navlinks active">Articles</a></li>
-        </ul>
+      <ul class="mobile-navlist">
+        <li><a href="index.html#home" class="mobile-navlinks">Home</a></li>
+        <li><a href="index.html#about" class="mobile-navlinks">About</a></li>
+        <li><a href="index.html#skills" class="mobile-navlinks">Skills</a></li>
+        <li>
+          <a href="index.html#projects" class="mobile-navlinks">Projects</a>
+        </li>
+        <li>
+          <a href="index.html#contact" class="mobile-navlinks">Contact</a>
+        </li>
+        <li>
+          <a href="projects.html" class="mobile-navlinks active">Articles</a>
+        </li>
+      </ul>
     </div>
 
     <main class="main-container">
-        <!-- Hero Section -->
-        <section class="articles-hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h1>Articles & <span class="highlight">Insights</span></h1>
-                    <p class="hero-description">
-                        Exploring the world of web development, cybersecurity, and emerging technologies 
-                        through detailed articles and tutorials.
-                    </p>
-                    <div class="hero-stats">
-                        <div class="stat-item">
-                            <h3 id="article-count">12+</h3>
-                            <p>Articles</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>5K+</h3>
-                            <p>Readers</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>8</h3>
-                            <p>Categories</p>
-                        </div>
-                    </div>
-                </div>
+      <!-- Hero Section -->
+      <section class="articles-hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1>Articles & <span class="highlight">Insights</span></h1>
+            <p class="hero-description">
+              Exploring the world of web development, cybersecurity, and
+              emerging technologies through detailed articles and tutorials.
+            </p>
+            <div class="hero-stats">
+              <div class="stat-item">
+                <h3 id="article-count">12+</h3>
+                <p>Articles</p>
+              </div>
+              <div class="stat-item">
+                <h3>5K+</h3>
+                <p>Readers</p>
+              </div>
+              <div class="stat-item">
+                <h3>8</h3>
+                <p>Categories</p>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Search and Filter Section -->
-        <section class="filter-section">
-            <div class="container">
-                <div class="search-filter-container">
-                    <div class="search-box">
-                        <i class="fas fa-search"></i>
-                        <input 
-                            type="text" 
-                            id="search-input" 
-                            placeholder="Search articles by title, topic, or tag..."
-                            aria-label="Search articles"
-                        >
-                    </div>
-                    
-                    <div class="category-filters">
-                        <button class="category-btn active" data-category="all">
-                            <i class="fas fa-th"></i> All
-                        </button>
-                        <button class="category-btn" data-category="web-dev">
-                            <i class="fas fa-code"></i> Web Dev
-                        </button>
-                        <button class="category-btn" data-category="security">
-                            <i class="fas fa-shield-alt"></i> CyberSecurity
-                        </button>
-                        <button class="category-btn" data-category="ai">
-                            <i class="fas fa-robot"></i> AI/ML
-                        </button>
-                        <button class="category-btn" data-category="tutorial">
-                            <i class="fas fa-book"></i> Tutorials
-                        </button>
-                        <button class="category-btn" data-category="tech">
-                            <i class="fas fa-microchip"></i> Technology
-                        </button>
-                    </div>
-                </div>
+      <!-- Search and Filter Section -->
+      <section class="filter-section">
+        <div class="container">
+          <div class="search-filter-container">
+            <div class="search-box">
+              <i class="fas fa-search"></i>
+              <input
+                type="text"
+                id="search-input"
+                placeholder="Search articles by title, topic, or tag..."
+                aria-label="Search articles"
+              />
             </div>
-        </section>
 
-        <!-- Featured Article -->
-        <!-- <section class="featured-article-section">
+            <div class="category-filters">
+              <button class="category-btn active" data-category="all">
+                <i class="fas fa-th"></i> All
+              </button>
+              <button class="category-btn" data-category="web-dev">
+                <i class="fas fa-code"></i> Web Dev
+              </button>
+              <button class="category-btn" data-category="security">
+                <i class="fas fa-shield-alt"></i> CyberSecurity
+              </button>
+              <button class="category-btn" data-category="ai">
+                <i class="fas fa-robot"></i> AI/ML
+              </button>
+              <button class="category-btn" data-category="tutorial">
+                <i class="fas fa-book"></i> Tutorials
+              </button>
+              <button class="category-btn" data-category="tech">
+                <i class="fas fa-microchip"></i> Technology
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Article -->
+      <!-- <section class="featured-article-section">
             <div class="container">
                 <h2 class="section-title">Featured <span>Article</span></h2>
                 
@@ -169,282 +188,253 @@
             </div>
         </section> -->
 
-        <!-- Articles Grid -->
-        <section class="articles-section">
-            <div class="container">
-                <h2 class="section-title"> All <span>Articles</span></h2>
-                
-                <div class="articles-grid" id="articles-grid">
+      <!-- Articles Grid -->
+      <section class="articles-section">
+        <div class="container">
+          <h2 class="section-title">All <span>Articles</span></h2>
 
-                     <!-- Article 1 -->
-                    <article class="article-card" data-category="ai">
-                        <div class="article-image">
-                            <img src="Public/Images/artmet02.png" alt="AI in Development" loading="lazy">
-                            <div class="article-overlay">
-                                <a href="#" class="read-link">
-                                    <i class="fas fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="article-content">
-                            <div class="article-meta">
-                                <span class="category-tag ai">
-                                    <i class="fas fa-robot"></i> AI/ML
-                                </span>
-                                <span class="read-time">
-                                    <i class="fas fa-clock"></i> 9 min
-                                </span>
-                            </div>
-                            <h3>AI-Powered Development: The Future is Here</h3>
-                            <p class="article-excerpt">
-                                How artificial intelligence is revolutionizing software development 
-                                and what it means for developers in the coming years.
-                            </p>
-                            <div class="article-footer">
-                                <span class="publish-date">
-                                    <i class="fas fa-calendar"></i> Aug 30, 2025
-                                </span>
-                                <a href="https://www.linkedin.com/pulse/how-chatbots-shaping-mindset-college-students-sword-nikhil-agrahari-gjhbf" class="read-more">
-                                    Read More <i class="fas fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Article 2 -->
-                    <article class="article-card" data-category="tech">
-                        <div class="article-image">
-                            <img src="Public/Images/artmet01.png" alt="Metro Technology" loading="lazy">
-                            <div class="article-overlay">
-                                <a href="#" class="read-link">
-                                    <i class="fas fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="article-content">
-                            <div class="article-meta">
-                                <span class="category-tag tech">
-                                    <i class="fas fa-microchip"></i> Technology
-                                </span>
-                                <span class="read-time">
-                                    <i class="fas fa-clock"></i> 6 min
-                                </span>
-                            </div>
-                            <h3>The Metro: A Technological Marvel</h3>
-                            <p class="article-excerpt">
-                                The metro isn't just a mode of transport — it's a technological marvel. 
-                                Exploring the advanced systems that make metro systems efficient and safe.
-                            </p>
-                            <div class="article-footer">
-                                <span class="publish-date">
-                                    <i class="fas fa-calendar"></i> Sep 28, 2025
-                                </span>
-                                <a href="https://www.linkedin.com/pulse/how-metro-systems-work-token-allocation-technology-behind-agrahari-wgxqf" class="read-more">
-                                    Read More <i class="fas fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Article 3 -->
-                    <article class="article-card" data-category="web-dev">
-                        <div class="article-image">
-                            <img src="Public/Images/artmat-js.jpg" alt="JavaScript Guide" loading="lazy">
-                            <div class="article-overlay">
-                                <a href="#" class="read-link">
-                                    <i class="fas fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="article-content">
-                            <div class="article-meta">
-                                <span class="category-tag web-dev">
-                                    <i class="fas fa-code"></i> Web Dev
-                                </span>
-                                <span class="read-time">
-                                    <i class="fas fa-clock"></i> 10 min
-                                </span>
-                            </div>
-                            <h3>Modern JavaScript: Essential Features You Should Know</h3>
-                            <p class="article-excerpt">
-                                A comprehensive guide to modern JavaScript features including arrow functions, 
-                                destructuring, async/await, and more advanced concepts.
-                            </p>
-                            <div class="article-footer">
-                                <span class="publish-date">
-                                    <i class="fas fa-calendar"></i> Sep 20, 2025
-                                </span>
-                                <a href="#" class="read-more">
-                                    Read More <i class="fas fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Article 4 -->
-                    <!-- <article class="article-card" data-category="tutorial">
-                        <div class="article-image">
-                            <img src="article3.jpg" alt="VS Code Extensions" loading="lazy">
-                            <div class="article-overlay">
-                                <a href="#" class="read-link">
-                                    <i class="fas fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="article-content">
-                            <div class="article-meta">
-                                <span class="category-tag tutorial">
-                                    <i class="fas fa-book"></i> Tutorial
-                                </span>
-                                <span class="read-time">
-                                    <i class="fas fa-clock"></i> 5 min
-                                </span>
-                            </div>
-                            <h3>Essential VS Code Extensions for Developers</h3>
-                            <p class="article-excerpt">
-                                Discover essential Visual Studio Code extensions that can significantly 
-                                improve your coding workflow and development experience.
-                            </p>
-                            <div class="article-footer">
-                                <span class="publish-date">
-                                    <i class="fas fa-calendar"></i> Sep 15, 2025
-                                </span>
-                                <a href="#" class="read-more">
-                                    Read More <i class="fas fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article> -->
-
-                    <!-- Article 5 -->
-                    <article class="article-card" data-category="security">
-                        <div class="article-image">
-                            <img src="Public/Images/artmat-cs.jpg" alt="Cybersecurity Basics" loading="lazy">
-                            <div class="article-overlay">
-                                <a href="#" class="read-link">
-                                    <i class="fas fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="article-content">
-                            <div class="article-meta">
-                                <span class="category-tag security">
-                                    <i class="fas fa-shield-alt"></i> Security
-                                </span>
-                                <span class="read-time">
-                                    <i class="fas fa-clock"></i> 12 min
-                                </span>
-                            </div>
-                            <h3>Cybersecurity Fundamentals for Web Developers</h3>
-                            <p class="article-excerpt">
-                                Essential cybersecurity practices every web developer should implement 
-                                to protect their applications and user data.
-                            </p>
-                            <div class="article-footer">
-                                <span class="publish-date">
-                                    <i class="fas fa-calendar"></i> Sep 10, 2025
-                                </span>
-                                <a href="#" class="read-more">
-                                    Read More <i class="fas fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Article 6 -->
-                    <!-- <article class="article-card" data-category="web-dev">
-                        <div class="article-image">
-                            <img src="article5.jpg" alt="Responsive Design" loading="lazy">
-                            <div class="article-overlay">
-                                <a href="#" class="read-link">
-                                    <i class="fas fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="article-content">
-                            <div class="article-meta">
-                                <span class="category-tag web-dev">
-                                    <i class="fas fa-code"></i> Web Dev
-                                </span>
-                                <span class="read-time">
-                                    <i class="fas fa-clock"></i> 8 min
-                                </span>
-                            </div>
-                            <h3>Mastering Responsive Web Design in 2025</h3>
-                            <p class="article-excerpt">
-                                Learn the latest techniques and best practices for creating beautiful, 
-                                responsive websites that work seamlessly across all devices.
-                            </p>
-                            <div class="article-footer">
-                                <span class="publish-date">
-                                    <i class="fas fa-calendar"></i> Sep 5, 2025
-                                </span>
-                                <a href="#" class="read-more">
-                                    Read More <i class="fas fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article> -->
-
-                   
+          <div class="articles-grid" id="articles-grid">
+            <!-- Article 1 -->
+            <article class="article-card" data-category="ai">
+              <div class="article-image">
+                <img
+                  src="Public/Images/artmet02.png"
+                  alt="AI in Development"
+                  loading="lazy"
+                />
+                <div class="article-overlay">
+                  <a
+                    href="how-chatbots-shaping-mindset-college-students-sword-nikhil-agrahari-gjhbf"
+                    class="read-link"
+                    target="_blank"
+                  >
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
                 </div>
-
-                <!-- No Results Message -->
-                <div class="no-results" id="no-results" style="display: none;">
-                    <i class="fas fa-search"></i>
-                    <h3>No Articles Found</h3>
-                    <p>Try adjusting your search or filter to find what you're looking for.</p>
+              </div>
+              <div class="article-content">
+                <div class="article-meta">
+                  <span class="category-tag ai">
+                    <i class="fas fa-robot"></i> AI/ML
+                  </span>
+                  <span class="read-time">
+                    <i class="fas fa-clock"></i> 9 min
+                  </span>
                 </div>
-
-                <!-- Load More Button -->
-                <div class="load-more-container">
-                    <button class="btn btn-secondary" id="load-more">
-                        <i class="fas fa-plus"></i> Load More Articles
-                    </button>
+                <h3>AI-Powered Development: The Future is Here</h3>
+                <p class="article-excerpt">
+                  How artificial intelligence is revolutionizing software
+                  development and what it means for developers in the coming
+                  years.
+                </p>
+                <div class="article-footer">
+                  <span class="publish-date">
+                    <i class="fas fa-calendar"></i> Aug 30, 2025
+                  </span>
+                  <a
+                    href="https://www.linkedin.com/pulse/how-chatbots-shaping-mindset-college-students-sword-nikhil-agrahari-gjhbf"
+                    class="read-more"
+                    target="_blank"
+                  >
+                    Read More <i class="fas fa-arrow-right"></i>
+                  </a>
                 </div>
+              </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="article-card" data-category="tech">
+              <div class="article-image">
+                <img
+                  src="Public/Images/artmet01.png"
+                  alt="Metro Technology"
+                  loading="lazy"
+                />
+                <div class="article-overlay">
+                  <a
+                    href="https://www.linkedin.com/pulse/how-metro-systems-work-token-allocation-technology-behind-agrahari-wgxqf"
+                    class="read-link"
+                  >
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="article-content">
+                <div class="article-meta">
+                  <span class="category-tag tech">
+                    <i class="fas fa-microchip"></i> Technology
+                  </span>
+                  <span class="read-time">
+                    <i class="fas fa-clock"></i> 6 min
+                  </span>
+                </div>
+                <h3>The Metro: A Technological Marvel</h3>
+                <p class="article-excerpt">
+                  The metro isn't just a mode of transport — it's a
+                  technological marvel. Exploring the advanced systems that make
+                  metro systems efficient and safe.
+                </p>
+                <div class="article-footer">
+                  <span class="publish-date">
+                    <i class="fas fa-calendar"></i> Sep 28, 2025
+                  </span>
+                  <a
+                    href="https://www.linkedin.com/pulse/how-metro-systems-work-token-allocation-technology-behind-agrahari-wgxqf"
+                    class="read-more"
+                    target="_blank"
+                  >
+                    Read More <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="article-card" data-category="web-dev">
+              <div class="article-image">
+                <img
+                  src="Public/Images/artmat-js.jpg"
+                  alt="JavaScript Guide"
+                  loading="lazy"
+                />
+                <div class="article-overlay">
+                  <a href="#" class="read-link">
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="article-content">
+                <div class="article-meta">
+                  <span class="category-tag web-dev">
+                    <i class="fas fa-code"></i> Web Dev
+                  </span>
+                  <span class="read-time">
+                    <i class="fas fa-clock"></i> 10 min
+                  </span>
+                </div>
+                <h3>Modern JavaScript: Essential Features You Should Know</h3>
+                <p class="article-excerpt">
+                  A comprehensive guide to modern JavaScript features including
+                  arrow functions, destructuring, async/await, and more advanced
+                  concepts.
+                </p>
+                <div class="article-footer">
+                  <span class="publish-date">
+                    <i class="fas fa-calendar"></i> Sep 20, 2025
+                  </span>
+                  <a href="#" class="read-more" target="_blank">
+                    Read More <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 5 -->
+            <article class="article-card" data-category="security">
+              <div class="article-image">
+                <img
+                  src="Public/Images/artmat-cs.jpg"
+                  alt="Cybersecurity Basics"
+                  loading="lazy"
+                />
+                <div class="article-overlay">
+                  <a href="#" class="read-link">
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="article-content">
+                <div class="article-meta">
+                  <span class="category-tag security">
+                    <i class="fas fa-shield-alt"></i> Security
+                  </span>
+                  <span class="read-time">
+                    <i class="fas fa-clock"></i> 12 min
+                  </span>
+                </div>
+                <h3>Cybersecurity Fundamentals for Web Developers</h3>
+                <p class="article-excerpt">
+                  Essential cybersecurity practices every web developer should
+                  implement to protect their applications and user data.
+                </p>
+                <div class="article-footer">
+                  <span class="publish-date">
+                    <i class="fas fa-calendar"></i> Sep 10, 2025
+                  </span>
+                  <a href="#" class="read-more" target="_blank">
+                    Read More <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- No Results Message -->
+          <div class="no-results" id="no-results" style="display: none">
+            <i class="fas fa-search"></i>
+            <h3>No Articles Found</h3>
+            <p>
+              Try adjusting your search or filter to find what you're looking
+              for.
+            </p>
+          </div>
+
+          <!-- Load More Button -->
+          <div class="load-more-container">
+            <button class="btn btn-secondary" id="load-more">
+              <i class="fas fa-plus"></i> Load More Articles
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter Section -->
+      <section class="newsletter-section">
+        <div class="container">
+          <div class="newsletter-card">
+            <div class="newsletter-icon">
+              <i class="fas fa-envelope"></i>
             </div>
-        </section>
-
-        <!-- Newsletter Section -->
-        <section class="newsletter-section">
-            <div class="container">
-                <div class="newsletter-card">
-                    <div class="newsletter-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <h2>Subscribe to My Newsletter</h2>
-                    <p>Get the latest articles and insights delivered directly to your inbox</p>
-                    <form class="newsletter-form" id="newsletter-form">
-                        <input 
-                            type="email" 
-                            placeholder="Enter your email address" 
-                            required
-                            aria-label="Email address"
-                        >
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i> Subscribe
-                        </button>
-                    </form>
-                    <p class="newsletter-note">
-                        <i class="fas fa-lock"></i> We respect your privacy. Unsubscribe anytime.
-                    </p>
-                </div>
-            </div>
-        </section>
+            <h2>Subscribe to My Newsletter</h2>
+            <p>
+              Get the latest articles and insights delivered directly to your
+              inbox
+            </p>
+            <form class="newsletter-form" id="newsletter-form">
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                required
+                aria-label="Email address"
+              />
+              <button type="submit" class="btn btn-primary">
+                <i class="fas fa-paper-plane"></i> Subscribe
+              </button>
+            </form>
+            <p class="newsletter-note">
+              <i class="fas fa-lock"></i> We respect your privacy. Unsubscribe
+              anytime.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-container">
-            <p>&copy; 2025 Nikhil Agrahari. All rights reserved. Built with <i class="fas fa-heart"></i> and dedication.</p>
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="index.html#about">About</a>
-                <a href="index.html#skills">Skills</a>
-                <a href="index.html#projects">Projects</a>
-                <a href="index.html#contact">Contact</a>
-            </div>
+      <div class="footer-container">
+        <p>
+          &copy; 2025 Nikhil Agrahari. All rights reserved. Built with
+          <i class="fas fa-heart"></i> and dedication.
+        </p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#skills">Skills</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#contact">Contact</a>
         </div>
+      </div>
     </footer>
 
     <!-- Notification Container -->
@@ -452,5 +442,5 @@
 
     <!-- Custom JavaScript -->
     <script src="articles.js"></script>
-</body>
+  </body>
 </html>
